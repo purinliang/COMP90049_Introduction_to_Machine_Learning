@@ -1,0 +1,5 @@
+{
+    "The accuracy of Decision Tree (default max_depth)": 0.73,
+    "The depth of trained Decision Tree": 19,
+    "The feature at the root of the tree": "contrast4"
+}
