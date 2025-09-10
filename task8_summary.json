@@ -1,0 +1,52 @@
+{
+    "air_conditioner": {
+        "precision": 0.63,
+        "recall": 0.74,
+        "f1-score": 0.68
+    },
+    "car_horn": {
+        "precision": 0.87,
+        "recall": 0.79,
+        "f1-score": 0.83
+    },
+    "children_playing": {
+        "precision": 0.65,
+        "recall": 0.62,
+        "f1-score": 0.64
+    },
+    "dog_bark": {
+        "precision": 0.72,
+        "recall": 0.66,
+        "f1-score": 0.69
+    },
+    "drilling": {
+        "precision": 0.74,
+        "recall": 0.72,
+        "f1-score": 0.73
+    },
+    "engine_idling": {
+        "precision": 0.74,
+        "recall": 0.71,
+        "f1-score": 0.72
+    },
+    "gun_shot": {
+        "precision": 0.86,
+        "recall": 0.85,
+        "f1-score": 0.86
+    },
+    "jackhammer": {
+        "precision": 0.79,
+        "recall": 0.87,
+        "f1-score": 0.83
+    },
+    "siren": {
+        "precision": 0.83,
+        "recall": 0.85,
+        "f1-score": 0.84
+    },
+    "street_music": {
+        "precision": 0.68,
+        "recall": 0.65,
+        "f1-score": 0.66
+    }
+}
