@@ -3,13 +3,8 @@ import json
 
 def task1():
     """
-    Performs Task 1: Summary Statistics.
-    1. Reads the urbansound8k_features_small.csv dataset.
-    2. Calculates total rows and columns.
-    3. Calculates the exact number of samples for each of the 10 sound classes.
-    4. Writes the results to a JSON file named task1_summary.json.
+    Task 1: Summary Statistics.
     """
-    # Assuming the file is in the same directory as the script
     file_path = "urbansound8k_features_small.csv"
     
     # 1. Read the dataset into a DataFrame
@@ -29,7 +24,7 @@ def task1():
         "Class counts": class_counts
     }
     
-    # Write the dictionary to a JSON file
+    # 5. Save the dictionary to a JSON file
     output_file_name = "task1_summary.json"
     with open(output_file_name, 'w', encoding='utf-8') as f:
         json.dump(summary_data, f, indent=4)

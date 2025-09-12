@@ -4,13 +4,8 @@ import matplotlib.pyplot as plt
 
 def task2():
     """
-    Performs Task 2: Feature Visualization.
-    1. Reads the urbansound8k_features_small.csv dataset.
-    2. Filters for 'dog_bark' and 'air_conditioner' classes.
-    3. Creates a violin plot of the 'contrast0' feature for these two classes.
-    4. Saves the plot to a file named task2_violin.png.
+    Task 2: Feature Visualization.
     """
-    # Assuming the file is in the same directory as the script
     file_path = "urbansound8k_features_small.csv"
     
     # 1. Read the dataset into a DataFrame
