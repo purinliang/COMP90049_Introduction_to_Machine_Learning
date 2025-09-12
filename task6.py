@@ -63,7 +63,7 @@ def task6():
 
     # 10. Draw the plot to visualise the top three levels of the tree
     plt.figure(figsize=(25, 15))
-    plot_tree(
+    annotations = plot_tree(
         dt_classifier,
         max_depth=2,  # Visualise top 3 levels (root + 2 more)
         feature_names=feature_names,
@@ -72,6 +72,11 @@ def task6():
         rounded=True,
         fontsize=10
     )
+    # Add borders to the nodes
+    for ann in annotations:
+        if ann.get_bbox_patch():
+            ann.get_bbox_patch().set_edgecolor('black')
+            
     plt.title("Top 3 Levels of the Decision Tree", fontsize=15)
     
     # 11. Save the plot to a PNG file
