@@ -19,22 +19,21 @@ def task2():
     plt.figure(figsize=(8, 6))
 
     # 3. Create the violin plot
-    # Use a more descriptive label for the y-axis
     sns.violinplot(
-        x='class', 
-        y='contrast0', 
-        data=df_filtered, 
-        palette="muted", 
+        x='class',
+        y='contrast0',
+        data=df_filtered,
+        palette="muted",
+        hue='class',  # Assign 'class' to hue to resolve the FutureWarning
+        legend=False, # Hide the legend, since it's redundant
         inner="quartile"
     )
     
-    # Add labels and a title for better readability
+    # 4. Add labels and a title for better readability
     plt.title('Distribution of Spectral Contrast for Dog Bark and Air Conditioner Sounds')
     plt.xlabel('Sound Class')
     plt.ylabel('Spectral Contrast ("contrast0")')
 
-    # 4. Save the plot to a PNG file
+    # 5. Save the plot to a PNG file
     output_file_name = "task2_violin.png"
     plt.savefig(output_file_name, dpi=300)
-    
-    print(f"Violin plot successfully saved to {output_file_name}")
